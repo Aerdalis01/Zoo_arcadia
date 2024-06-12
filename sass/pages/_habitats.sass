@@ -1,0 +1,108 @@
+
+  @import "../vendors/_bootstrap"
+
+  .habitats
+    position: relative
+  
+  .habitats-accueil
+    max-width: 100%
+    overflow-x: hidden
+
+  .habitats-svg
+    height: 50px
+
+  .vague
+    position: absolute
+    top: -5px
+    left: -1px
+    z-index: 9999
+    @include media-breakpoint-up(md)
+      top: -15px
+      content: url("/assets/img/habitats/vagVerLg.svg")
+
+  .vague-orange
+    position: absolute
+    top: -3px
+    left: 0
+    z-index: 0
+    @include media-breakpoint-up(sm)
+      content: url("/assets/img/habitats/vagOrmd.svg")
+    @include media-breakpoint-up(md)
+      top: -5px
+      content: url("/assets/img/habitats/vagOrLg.svg")
+
+  .vague-bottom--lg
+    position: absolute
+    bottom: 0
+    display: none
+    
+
+  .habitat--marais
+    height: 50svh
+    @include media-breakpoint-up(sm)
+      height: 75svh
+
+  .title-marais 
+    position: relative
+    z-index: 10
+    @include media-breakpoint-up(md)
+      top: 10px
+
+  .habitat--savane
+    position: relative
+    height: 50svh
+    @include media-breakpoint-up(sm)
+      height: 75svh
+
+  .title-savane 
+    position: absolute
+    top:  0
+    z-index: 10
+
+  .vague-savane
+    position: absolute
+    top: -30px
+    left: 0
+    z-index: 1
+    @include media-breakpoint-up(sm)
+      content: url("/assets/img/habitats/vagVermd.svg")
+    
+  
+  .vagueOr-savane
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    @include media-breakpoint-up(sm)
+      content: url("/assets/img/habitats/vagOrmd.svg")
+
+  .habitat--jungle
+    position: relative
+    height: 50svh
+    @include media-breakpoint-up(sm)
+      height: 75svh
+
+  .vague-jungle
+    position: absolute
+    max-height: 100px
+    top: -30px
+    left: 0
+    z-index: 1
+    @include media-breakpoint-up(sm)
+      content: url("/assets/img/habitats/vagVermd.svg")
+    
+  .vagueOr-jungle
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    @include media-breakpoint-up(sm)
+      content: url("/assets/img/habitats/vagOrmd.svg") 
+
+  .title-jungle 
+    position: absolute
+    top:  0
+    z-index: 10
+
+  .marais-content, .jungle-content, .savane-content
+    padding: 200px 0 200px 0

@@ -135,8 +135,8 @@
 <section class="animaux">
   <!--Début section animaux-->
   <img class="svg-top w-100" src="/assets/img/Services/Svgdeco/SliceGreenMobil.svg" alt="demi-ellipse de couleur verte">
-  <img class="svg-left h-100" src="/assets/img/Accueil/RonOr&verLeft.svg" alt="Demi ellipse verte et orange">
-  <img class="svg-right h-100" src="/assets/img/Accueil/RonOr&verRight.svg" alt="Demi ellipse verte et orange">
+  <img class="svg-left" src="/assets/img/Accueil/RonOr&verLeft.svg" alt="Demi ellipse verte et orange">
+  <img class="svg-right" src="/assets/img/Accueil/RonOr&verRight.svg" alt="Demi ellipse verte et orange">
   <div class="services-title text-center py-2 mb-lg-5">
     <h1 class="text-white">Services</h1>
     <h6 class="text-white">Retrouvez toutes nos offres</h6>
@@ -184,25 +184,27 @@
     </div>
   </div>
 </section>
-<section class="avis">
+<section class="avis mb-5">
   <div class="container-fluid">
-    <div class="row row-cols-1">
-      <div class="container-avis d-flex-column d-md-flex justify-content-center">
-        <img class="img-fluid mx-auto" src="/assets/img/Accueil/Avis-1.svg" alt="Avis d'un client du zoo">
-        <img class="img-fluid" src="/assets/img/Accueil/Avis-2.svg" alt="Avis d'un client du zoo">
-        <img class="img-fluid" src="/assets/img/Accueil/Avis.svg" alt="Avis d'un client du zoo">
-      </div>
-      <div class="container-avis--lg d-md-flex justify-content-center">
-        <img class="img-fluid" src="/assets/img/Accueil/Avis-1.svg" alt="Avis d'un client du zoo">
-        <img class="img-fluid" src="/assets/img/Accueil/Avis-2.svg" alt="Avis d'un client du zoo">
-        <img class="img-fluid" src="/assets/img/Accueil/Avis.svg" alt="Avis d'un client du zoo">
-      </div>
+    <hr>
+    <div class="services-title text-center py-2 mb-lg-5 mt-5">
+      <h1>Avis</h1>
+      <h6>Vos avis comptent.</h6>
     </div>
-    <div class="col-12 d-flex justify-content-center">
-    <button type="button" class="rounded-5">Donnez votre avis !!</button>
+    <div class="row row-cols-1 row-cols-md-3">
+      <img class="col  mx-auto" src="/assets/img/Accueil/Avis-1.svg" alt="Avis d'un client du zoo">
+      <img class="col mx-auto" src="/assets/img/Accueil/Avis-2.svg" alt="Avis d'un client du zoo">
+      <img class="col mx-auto" src="/assets/img/Accueil/Avis.svg" alt="Avis d'un client du zoo">
+      <img class="avis-img col mx-auto" src="/assets/img/Accueil/Avis-1.svg" alt="Avis d'un client du zoo">
+      <img class="avis-img col mx-auto" src="/assets/img/Accueil/Avis-2.svg" alt="Avis d'un client du zoo">
+      <img class="avis-img col mx-auto" src="/assets/img/Accueil/Avis.svg" alt="Avis d'un client du zoo">
+    </div>
+  </div>
+  <div class="col-12 d-flex justify-content-center ">
+    <button type="button" class="avis-btn fw-semibold rounded-3">Donnez votre avis !!</button>
   </div>
   </div>
-  <div class="card-form col-6">
+  <div class="modal-form col-6">
     <form class="row g-3" method="post" action="#">
       <div class="col-md-6">
         <label for="inputNom" class="form-label">Nom</label>
@@ -216,13 +218,13 @@
         <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
         <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
         </div>
-        <div class="note bg-white">
-        <div class="étoile d-flex justify-content-center">
-          <div><img src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
-          <div><img src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+        <div class=" note bg-white d-flex flex-column align-items-center">
+        <div class="content-etoile d-inline-flex justify-content-center">
+          <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
         </div>
       </div>
       <div class="col-12 d-flex justify-content-center">

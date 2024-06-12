@@ -10,7 +10,7 @@
     @include media-breakpoint-up(lg)
       min-height: 120svh
     @include media-breakpoint-up(xl)
-      min-height: 200svhsvh
+      min-height: 200svh
   
   .services-svg
     z-index: 2
@@ -73,30 +73,31 @@
     height: auto
     position: relative
     overflow: hidden
-    @include media-breakpoint-up(lg)
-      min-height: 120svh
-    @include media-breakpoint-up(xl)
-      min-height: 200svhsvh
+
   .svg-top
     position: absolute
     top:  -1px
     left: 0
     @include media-breakpoint-up(sm)
       content: url("/assets/img/Accueil/DemiEllipseVerte.svg")
+
   .animaux .svg-left 
+    height: 95%
     position: absolute
     left: -80px
     top: 5%
+    z-index: 0
     @include media-breakpoint-up(md)
-      left: 0
+      left: -40px
 
   .animaux .svg-right  
+    height: 95%
     position: absolute
     top: 5%
-    right: -80px
-    overflow: hidden 
+    right: -80px 
+    z-index: 0
     @include media-breakpoint-up(md)
-      right: 0
+      right: -40px
 
   .animaux-text
     display: none 
@@ -111,18 +112,19 @@
 
   // Section avis
   .avis
-    height: 100svh
+    height: auto
     position: relative
     z-index: 3
   
-  .container-avis--lg
+  .avis-img
     display: none
     @include media-breakpoint-up(lg)
       display: block
   
 
   // modal-avis
-  .card-form
+  .modal-form
+    min-height: 300px
     position: absolute
     top: 25%
     left: 25%
@@ -130,5 +132,15 @@
     border: 1px solid $gray-600
     border-radius: 20px
     background-color: $green
-    font-family: font-family: 'Akaya_kanadaka',inter,sans-serif
+    font-family: 'Akaya_kanadaka',inter,sans-serif
     color: $warning
+    display: none
+
+  .etoile
+    filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(158%) hue-rotate(14deg) brightness(92%) contrast(88%)
+    cursor: pointer
+
+  .avis-btn
+    height: 45px
+    width: 150px
+  
