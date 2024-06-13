@@ -11,9 +11,6 @@
     font-family: 'Akaya_kanadaka',inter,sans-serif
     color: #000000
     text-shadow: 2px 2px 2px white
-    @include media-breakpoint-up(md)
-      background-image: url("./assets/img/Accueil/Carousel/cerf-LG.webp")
-  
   .container-carousel--text
     position: absolute
     bottom: 20%
@@ -31,15 +28,23 @@
   .carousel-img--accueil
     @include media-breakpoint-up(md)
       content: url("../../assets/img/Accueil/Carousel/cerf-LG.webp")
+    @include media-breakpoint-up(lg)
+      content: url("../../assets/img/Accueil/Carousel/cerf.webp")
   .carousel-img--marais
     @include media-breakpoint-up(md)
       content: url("../../assets/img/Accueil/Carousel/flamant-LG.webp")
+    @include media-breakpoint-up(lg)
+      content: url("../../assets/img/Accueil/Carousel/flamant-XL.webp")
   .carousel-img--savane
     @include media-breakpoint-up(md)
       content: url("../../assets/img/Accueil/Carousel/girafe-LG.webp")
+    @include media-breakpoint-up(lg)
+      content: url("../../assets/img/Accueil/Carousel/girafe-XL.webp")
   .carousel-img--jungle
     @include media-breakpoint-up(md)
       content: url("../../assets/img/Accueil/Carousel/chameleon-LG.webp")
+    @include media-breakpoint-up(lg)
+      content: url("../../assets/img/Accueil/Carousel/chameleon-XL.webp")
   
   
   

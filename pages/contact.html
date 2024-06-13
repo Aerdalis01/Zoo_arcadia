@@ -1,0 +1,63 @@
+<section class="contact">
+  <div class="contact-titre col-12 text-center w-100 pt-3">
+    <h1>Contact</h1>
+    <h3>Pour laisser un message à notre  ou donnez votre avis c'est par ici.</h3>
+  </div>
+  <div class="contact-avis d-flex justify-content-center my-5">
+    <button class="rounded-5 fs-5" type="button">Donnez votre avis</button>
+  </div>
+  <div class="contact-modal--avis">
+    <h3>Donnez votre avis</h3>
+    <form class="row g-3" method="post">
+      <div class="col-md-6">
+        <label for="inputNom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="inputNom" required minlength="4" maxlength="20" size="22">
+      </div>
+      <div class="col-md-6">
+        <label for="inputDate" class="form-label">Date de visite</label>
+        <input type="date" class="form-control" id="inputDate">
+      </div>
+      <div class="col-12">
+        <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
+        <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
+        </div>
+        <div class=" note bg-white d-flex flex-column align-items-center">
+        <div class="content-etoile d-inline-flex justify-content-center">
+          <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center pt-3">
+        <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="contact--mail my-5">
+    <div class="contact-modal--mail col-10 mx-auto">
+      <h3>Formulaire de contact</h3>
+      <form class="row g-3" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Renseignez votre Email ici" required minlength="4" maxlength="20" size="22" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <span class="input-group-text" id="inputMail">Email</span>
+        </div>
+        <div class="col-md-6">
+          <label for="inputTitre" class="form-label">Titre</label>
+          <input type="text"  placeholder="Titre de votre message" class="form-control" id="inputTitre" required minlength="4" maxlength="20" size="22">
+        </div>
+
+        <div class="col-12">
+          <label for="inputMessageExpand" class="form-message">Message</label>
+          <input type="text"  placeholder="Renseignez votre message ici" class="form-control" id="inputMessageExpand" minlength="4" maxlength="1000" size="1002">
+          </div>
+          <div class=" col-12 d-flex justify-content-center">
+          <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
+        </div>
+      </form>
+    </div>
+
+</section>

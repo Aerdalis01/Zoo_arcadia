@@ -1,0 +1,45 @@
+
+  @import "../vendors/_bootstrap"
+
+  .contact
+    background-color: #f5f5f5
+    position: relative
+    height: 100svh
+    z-index: 0
+
+  .contact-modal
+    min-height: 350px
+    padding: 5px
+    border: 1px solid $gray-600
+    border-radius: 20px
+    background-color: $green
+    font-family: 'Akaya_kanadaka',inter,sans-serif
+    color: $warning
+    position: relative
+    z-index: 1
+
+    &--avis
+      @extend .contact-modal
+      position: fixed
+      top: 26%
+      left: 0
+      width: 100%
+      backdrop-filter: blur(5px)
+      overflow: hidden
+      z-index: 9999
+    &--mail
+      @extend .contact-modal
+      .form-message
+        width: 100%
+        box-sizing: border-box
+        overflow: hidden
+        resize: none
+        z-index: 1
+    
+  .etoile
+    filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(158%) hue-rotate(14deg) brightness(92%) contrast(88%)
+    cursor: pointer
+
+  .avis-btn
+    height: 45px
+    width: 150px
