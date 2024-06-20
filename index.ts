@@ -13,7 +13,7 @@ const connexion = document.querySelector('.connexion') as HTMLElement
 
 const connexionExit = document.querySelector('.content-exit') as HTMLElement
 
-//au clic sur le bouton "avis-button" la modal "modal-form" apparaît, au clic sur la 
+//au clic sur le bouton "avis-button" la modal "modal-form" apparaît, au clic sur "" 
 const avisBtn = document.querySelector('.avis-button') as HTMLElement
 console.log(avisBtn)
 
