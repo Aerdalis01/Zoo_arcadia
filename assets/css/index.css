@@ -23755,6 +23755,9 @@ header {
   min-height: 100svh;
   z-index: 9999;
 }
+.modal-menu--open {
+  top: 0;
+}
 
 .item-connexion {
   position: absolute;
