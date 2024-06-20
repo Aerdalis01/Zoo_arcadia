@@ -1,6 +1,6 @@
 
   @import "../vendors/_bootstrap"
-  
+
   /*Section services*/
   .services
     min-height: 90svh
@@ -143,16 +143,36 @@
   // modal-avis
   .modal-form
     min-height: 300px
-    position: absolute
+    position: fixed
     top: 25%
     left: 25%
+    transform: translate(-50%, -50%)
     padding: 5px
     border: 1px solid $gray-600
     border-radius: 20px
     background-color: $green
+    backdrop-filter: blur(5px)
     font-family: 'Akaya_kanadaka',inter,sans-serif
     color: $warning
-    display: none
+    display: block
+    &--exit
+      position: absolute
+      top: 5px
+      right: 5px
+      width: 20px
+    &--open
+      position: relative;
+    &--open::before
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      z-index: 999;
+
 
   .etoile
     filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(158%) hue-rotate(14deg) brightness(92%) contrast(88%)
