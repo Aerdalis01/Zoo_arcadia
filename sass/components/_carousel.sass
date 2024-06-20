@@ -1,9 +1,12 @@
 
+
   @import "../vendors/_bootstrap"
 
-  .carousel 
-    z-index: 2
+
+  .carousel
+    z-index: 0
     background-color: white
+
   .carousel-item
     height: 90svh
     max-height: 90svh
@@ -11,49 +14,50 @@
     font-family: 'Akaya_kanadaka',inter,sans-serif
     color: #000000
     text-shadow: 2px 2px 2px white
-  .container-carousel--text
-    position: absolute
-    bottom: 20%
-    left: 0
 
-  .container-carousel--textHigh
+  .container-carousel
     position: absolute
-    top: 10%
-    left: 0
+    &--text 
+      @extend .container-carousel
+      bottom: 20%
+      left: 0
+
   .container_menu-burger, .container_icone-user
     @include media-breakpoint-up(md)
       position: absolute
       top: -100svh
 
   .carousel-img--accueil
-    @include media-breakpoint-up(md)
+    position: fixed
+    bottom: 0
+    opacity: 75%
+    @include media-breakpoint-up(sm)
       content: url("../../assets/img/Accueil/Carousel/cerf-LG.webp")
-    @include media-breakpoint-up(lg)
+    @include media-breakpoint-up(md)
       content: url("../../assets/img/Accueil/Carousel/cerf.webp")
   .carousel-img--marais
+    position: fixed
+    bottom: 0
+    opacity: 75%
+    @include media-breakpoint-up(sm)
+      content: url("../../assets/Marais/Marais-md.webp")
     @include media-breakpoint-up(md)
-      content: url("../../assets/img/Accueil/Carousel/flamant-LG.webp")
-    @include media-breakpoint-up(lg)
-      content: url("../../assets/img/Accueil/Carousel/flamant-XL.webp")
+      content: url("../../assets/img/Marais/Marais-lg.webp")
+      overflow: hidden
   .carousel-img--savane
+    position: fixed
+    bottom: 0
+    opacity: 75%
+    @include media-breakpoint-up(sm)
+      content: url("../../assets/img/Savane/Savane-md.webp")
     @include media-breakpoint-up(md)
-      content: url("../../assets/img/Accueil/Carousel/girafe-LG.webp")
-    @include media-breakpoint-up(lg)
-      content: url("../../assets/img/Accueil/Carousel/girafe-XL.webp")
+      content: url("../../assets/img/Savane/Savane-lg.webp")
+    
   .carousel-img--jungle
+    position: fixed
+    bottom: 0
+    opacity: 75%
+    @include media-breakpoint-up(sm)
+      content: url("../../assets/img//Jungle/Jungle-md.webp")
     @include media-breakpoint-up(md)
-      content: url("../../assets/img/Accueil/Carousel/chameleon-LG.webp")
-    @include media-breakpoint-up(lg)
-      content: url("../../assets/img/Accueil/Carousel/chameleon-XL.webp")
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      content: url("../../assets/img//Jungle/Jungle-lg.webp")

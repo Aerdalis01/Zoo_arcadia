@@ -1,63 +1,152 @@
 <section class="contact">
-  <div class="contact-titre col-12 text-center w-100 pt-3">
+  <div class="contact-titre col-10 text-center w-100 pt-3">
     <h1>Contact</h1>
-    <h3>Pour laisser un message à notre  ou donnez votre avis c'est par ici.</h3>
+    <h3>Pour laisser un message à notre équipe ou donnez votre avis c'est par ici.</h3>
   </div>
-  <div class="contact-avis d-flex justify-content-center my-5">
-    <button class="rounded-5 fs-5" type="button">Donnez votre avis</button>
-  </div>
-  <div class="contact-modal--avis">
-    <h3>Donnez votre avis</h3>
-    <form class="row g-3" method="post">
-      <div class="col-md-6">
-        <label for="inputNom" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="inputNom" required minlength="4" maxlength="20" size="22">
-      </div>
-      <div class="col-md-6">
-        <label for="inputDate" class="form-label">Date de visite</label>
-        <input type="date" class="form-control" id="inputDate">
-      </div>
-      <div class="col-12">
-        <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
-        <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
-        </div>
-        <div class=" note bg-white d-flex flex-column align-items-center">
-        <div class="content-etoile d-inline-flex justify-content-center">
-          <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-        </div>
-      </div>
-      <div class="col-12 d-flex justify-content-center pt-3">
-        <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
-      </div>
-    </form>
-  </div>
-  
-  <div class="contact--mail my-5">
-    <div class="contact-modal--mail col-10 mx-auto">
-      <h3>Formulaire de contact</h3>
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5 m-0 w-100">
+    <div class="contact-modal--avis">
+      <h3>Donnez votre avis</h3>
       <form class="row g-3" method="post">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Renseignez votre Email ici" required minlength="4" maxlength="20" size="22" aria-label="Recipient's username"
-            aria-describedby="basic-addon2">
-          <span class="input-group-text" id="inputMail">Email</span>
+        <div class="col-md-6">
+          <label for="inputNom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="inputNom" required minlength="4" maxlength="20" size="22">
         </div>
         <div class="col-md-6">
-          <label for="inputTitre" class="form-label">Titre</label>
-          <input type="text"  placeholder="Titre de votre message" class="form-control" id="inputTitre" required minlength="4" maxlength="20" size="22">
+          <label for="inputDate" class="form-label">Date de visite</label>
+          <input type="date" class="form-control" id="inputDate">
         </div>
-
         <div class="col-12">
-          <label for="inputMessageExpand" class="form-message">Message</label>
-          <input type="text"  placeholder="Renseignez votre message ici" class="form-control" id="inputMessageExpand" minlength="4" maxlength="1000" size="1002">
+          <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
+          <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
+        </div>
+        <div class=" note d-flex flex-column align-items-center">
+          <div class="content-etoile d-inline-flex justify-content-center">
+            <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
+            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
           </div>
-          <div class=" col-12 d-flex justify-content-center">
+        </div>
+        <div class="col-12 d-flex justify-content-center pt-3">
           <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
         </div>
       </form>
     </div>
+    <div class="contact--mail d-flex flex-column align-items-center my-5">
+      <div class="contact-modal--mail">
+        <h3>Formulaire de contact</h3>
+        <form class="row g-3" method="post">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Renseignez votre Email ici" required minlength="4"
+              maxlength="20" size="22" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="inputMail">Email</span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputTitre" class="form-label">Titre</label>
+            <input type="text" placeholder="Titre de votre message" class="form-control" id="inputTitre" required
+              minlength="4" maxlength="20" size="22">
+          </div>
 
+          <div class="col-12">
+            <label for="inputMessageExpand" class="form-message">Message</label>
+            <input type="text" placeholder="Renseignez votre message ici" class="form-control" id="inputMessageExpand"
+              minlength="4" maxlength="1000" size="1002">
+          </div>
+          <div class=" col-12 d-flex justify-content-center">
+            <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</section>
+<section>
+  <div class="container-fluid text-center">
+    <h2 class="py-2">Informations</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="card mb-3">
+          <div class="row w-100 text-center d-flex  justify-content-center g-0">
+            <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
+              <div
+                class="train--card-body col-10 bg-warning rounded-5 h-100 d-flex flex-column align-items-center justify-content-center">
+                <h4>Horaires du zoo</h4>
+                <p class="card-text">
+                  -Lundi: 09h00 - 18h00
+                  -Mardi: 09h00 - 18h00
+                  -Mercredi: 09h00 - 18h00
+                  -Jeudi: 09h00 - 18h00
+                  -Vendredi: 09h00 - 18h00
+                  -Samedi: 09h00 - 18h00
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <div class="row w-100 text-center d-flex  justify-content-center g-0">
+            <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
+              <div
+                class="train--card-body col-10 bg-warning rounded-5 h-100 d-flex flex-column align-items-center justify-content-center">
+                <h4>Accès au zoo</h4>
+                <p class="card-text">
+                  En voiture:
+                    -A 44 minutes de Rennes via la N24
+
+                  En  bus:
+                    -A 1h via la ligne 1a de la gare routière de Rennes. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <div class="row w-100 text-center d-flex  justify-content-center g-0">
+            <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
+              <div
+                class="train--card-body col-10 bg-warning rounded-5 h-100 d-flex flex-column align-items-center justify-content-center">
+                <h4>Horaires des visites guidées:</h4>
+                <p class="card-text">
+                  -10h00
+                  -11h00
+                  -13h00
+                  -14h00
+                  -15h00
+                  -16h00
+  
+                  Tous les départs se font dans la zone d’accueil, pour en savoir plus voir la carte ci-dessous.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3">
+          <div class="row w-100 text-center d-flex  justify-content-center g-0">
+            <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
+              <div
+                class="train--card-body col-10 bg-warning rounded-5 h-100 d-flex flex-column align-items-center justify-content-center">
+                <h4>Horaires du petit train:</h4>
+              <p class="card-text">
+                -9h30
+                -10h30
+                -11h30
+                -13h30
+                -14h30
+                -15h30
+
+                Tous les départs se font dans la zone d’accueil, pour en savoir plus voir la carte ci-dessous.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>

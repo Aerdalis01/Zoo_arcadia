@@ -6,14 +6,20 @@
     min-height: 90svh
     height: auto
     position: relative
-    background-color: #F5F5F5
+    backdrop-filter: opacity(80%)
+    z-index: 0
     @include media-breakpoint-up(lg)
       min-height: 120svh
     @include media-breakpoint-up(xl)
-      min-height: 200svh
-  
-  .services-svg
+      min-height: 140svh
+
+  .content-greenSvg
+    position: absolute
+    bottom: 0
     z-index: 2
+    opacity: 90%
+
+
 
   .services-title 
     height: 150px
@@ -26,6 +32,7 @@
     position: absolute
     top: 0
     left: 0
+    opacity: 90%
     
 
   .svg-rectangle
@@ -36,9 +43,10 @@
 
   .svg-ellipse
     z-index: 1
+    
     @include media-breakpoint-up(lg)
-      background-image: url("/assets/img/Services/Ellipse 15.svg")
-
+      content: url("/assets/img/Accueil/demiElOrLg.svg")
+      background-repeat: no-repeat 
   .service-container
     @include media-breakpoint-up(lg)
       margin-top: 50px
@@ -46,9 +54,7 @@
       
   
 
-  .card 
-    background-color: transparent
-    border: none
+  .accueil-card--services
     z-index: 5
     button
       @include media-breakpoint-down(md)
@@ -61,10 +67,7 @@
     max-width: 354px
     font-size: 1,1rem
 
-  .content-greenSvg
-    position: absolute
-    bottom: 0
-    z-index: 2
+  
 
   /*section animaux*/
 
@@ -73,11 +76,16 @@
     height: auto
     position: relative
     overflow: hidden
-
+    backdrop-filter: opacity(80%)
+    z-index: 0
+    .card-body
+      background-color: #fff  
+      opacity:  80%
   .svg-top
     position: absolute
     top:  -1px
     left: 0
+    opacity: 90%
     @include media-breakpoint-up(sm)
       content: url("/assets/img/Accueil/DemiEllipseVerte.svg")
 
@@ -87,6 +95,7 @@
     left: -80px
     top: 5%
     z-index: 0
+    opacity: 90%
     @include media-breakpoint-up(md)
       left: -40px
 
@@ -96,6 +105,7 @@
     top: 5%
     right: -80px 
     z-index: 0
+    opacity: 90%
     @include media-breakpoint-up(md)
       right: -40px
 
@@ -103,6 +113,7 @@
     display: none 
     @include media-breakpoint-up(md)
       display: block
+      font-size: 1.1rem
 
   .container-sophie
     display: none
@@ -111,11 +122,18 @@
 
 
   // Section avis
+  .hr-avis
+    width: 50px 
+    height: 1px 
+    background-color: $green
+
   .avis
     height: auto
     position: relative
-    z-index: 3
-  
+    
+  .avis-title
+    opacity: 90%
+
   .avis-img
     display: none
     @include media-breakpoint-up(lg)
