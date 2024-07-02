@@ -142982,6 +142982,10 @@ textarea.form-control-lg {
   box-shadow: 2px 2px 2px 2px #E75D23;
 }
 
+.select-group-animaux select {
+  display: none;
+}
+
 /* MAIN.sass
  *
  * Fichier principal qui va importer les autres fichiers.  

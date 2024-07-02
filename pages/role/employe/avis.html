@@ -1,0 +1,109 @@
+<section class="gestion-avis text-center d-flex flex-column justify-content-center align-items-center py-5">
+  <h2>AVIS</h2>
+  <form id="gestion-avis-form" class="row col-10 g-3" method="post">
+    <div class="col-md-6">
+      <label for="gestionInputNom" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="gestionInputNom" placeholder="Nom" required minlength="4"
+        maxlength="20" size="22">
+    </div>
+    <div class="col-md-6">
+      <label for="gestionInputDate" class="form-label">Date de visite</label>
+      <input type="date" required class="form-control" id="gestionInputDate">
+    </div>
+    <div class="col-12">
+      <label for="gestionInputText" class="form-texte">Votre commentaire ici</label>
+      <input type="text" class="form-control" id="gestionInputText" placeholder="Commentaires" required minlength="4"
+        maxlength="100" size="102"">
+      </div>
+      <div class=" note d-flex flex-column align-items-center">
+      <div class="content-etoile d-inline-flex justify-content-center">
+        <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
+        <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+        <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+        <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+        <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Valider</button>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Ne pas valider</button>
+    </div>
+  </form>
+</section>
+<section class="gestion-animaux text-center d-flex flex-column justify-content-center align-items-center py-5">
+  <h2>Rapport repas animaux</h2>
+  <div class="animaux-form">
+    <div class="form-check-inline">
+      <input type="radio" name="habitats" id="hab1">
+      <label for="hab1">Marais</label>
+      <input  type="radio" name="habitats"  id="hab2">
+      <label for="hab2">Savane</label>
+      <input  type="radio" name="habitats"  id="hab3">
+      <label for="hab3">Jungle
+      </label>
+    </div>
+
+    <div class="select-group-animaux ">
+      <select id="select-hab1">
+        <option value="">Sélectionnez une option</option>
+        <option value="habitats1-1">cerf</option>
+        <option value="habitats1-2">flamant</option>
+        <option value="habitats1-3">heron</option>
+        <option value="habitats1-4">loutre</option>
+        <option value="habitats1-5">canard</option>
+        <option value="habitats1-6">castor</option>
+        <option value="habitats1-7">lapin</option>
+      </select>
+
+      <select id="select-hab2">
+        <option value="">Sélectionnez une option</option>
+        <option value="habitats2-1">elephant</option>
+        <option value="habitats2-2">girafe</option>
+        <option value="habitats2-3">rhinoceros</option>
+        <option value="habitats2-4">autruche</option>
+        <option value="habitats2-5">impala</option>
+        <option value="habitats2-6">gnou</option>
+        <option value="habitats2-7">zebre"</option>
+      </select>
+
+      <select id="select-hab3">
+        <option value="">Sélectionnez une option</option>
+        <option value="habitats3-1">ouistiti</option>
+        <option value="habitats3-2">fourmilier</option>
+        <option value="habitats3-3">chimpanzé</option>
+        <option value="habitats3-4">paresseux</option>
+        <option value="habitats3-5">toucan</option>
+        <option value="habitats3-6">tatoo</option>
+        <option value="habitats3-7">ara</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="raceInput" class="form-label">Race</label>
+      <input type="text" class="form-control" id="raceInput" data-show="admin">
+    </div>
+    <div class="mb-3">
+      <label for="habInput" class="form-label">Habitat</label>
+      <input type="text" class="form-control" id="habInput" data-show="admin">
+    </div>
+    <div class="mb-3">
+      <label for="etatInput" class="form-label">Etat</label>
+      <input type="text" class="form-control" id="etatInput" required>
+    </div>
+    <div class="mb-3">
+      <label for="toucanFoodInput" class="form-label">Nourritue proposé</label>
+      <input type="text" class="form-control" id="toucanFoodInput" required>
+    </div>
+    <div class="mb-3">
+      <label for="dateInput" class="form-label">Date de passage</label>
+      <input type="date" class="form-control" id="dateInput" required>
+    </div>
+    <div class="mb-3">
+      <label for="comInput" class="form-label">Commentaire du vérérinaire</label>
+      <input type="text" class="form-control" id="comInput" data-show="veto">
+    </div>
+  </div>
+  </div>
+  <button type="submit">Envoyer</button>
+</section>
