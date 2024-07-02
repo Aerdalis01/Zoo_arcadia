@@ -82,10 +82,10 @@
   <div class="container-fluid service-container px-md-4 px-md-5 py-1">
     <div class="row d-flex align-items-center justify-content-center  g-0 ">
       <div class="card-group px-sm-2 px-md-3 px-lg-4 px-xl-5">
-        <div class="card accueil-card--services mb-3">
+        <div class="card accueil-services--restauration mb-3" data-section="restaurations">
           <div class="row w-100 text-center d-flex  justify-content-center g-0">
             <div class="img-service col-5 col-sm-12 p-2 p-md-3 p-lg-4 p-xl-5">
-              <img src="/assets/img/Services/Background (22).svg" class="img-fluid rounded-5"
+              <img src="/assets/img/Services/Background (22).svg" class="img-fluid img-resto rounded-5"
                 alt="Image d'une famille mangeant sur une table de pic-nique dans un zoo">
             </div>
             <div class="col-7 col-sm-12 d-flex justify-content-center p-2">
@@ -95,11 +95,11 @@
                 </p>
               </div>
             </div>
-            <button class="col-md-5 col-lg-3 rounded-5 mt-2 fs-5" type="button">Voir plus
+            <button class="restau-btn col-3 col-sm-5 rounded-5 mt-2 fs-5" type="button">Voir plus
             </button>
           </div>
         </div>
-        <div class="card accueil-card--services mb-3">
+        <div class="card accueil-services--visite mb-3" data-section="visite">
           <div class="row w-100 text-center d-flex  justify-content-center g-0">
             <div class="img-service col-5 col-sm-12 p-2 p-md-3 p-lg-4 p-xl-5">
               <img src="/assets/img/Services/Background (21).svg" class="img-fluid rounded-5"
@@ -112,11 +112,11 @@
                   environnements.</p>
               </div>
             </div>
-            <button class="col-md-5 col-lg-3 rounded-5 mt-2 fs-5" type="button">Voir plus
+            <button class="visite-btn col-3 col-sm-5 rounded-5 mt-2 fs-5" type="button">Voir plus
             </button>
           </div>
         </div>
-        <div class="card accueil-card--services mb-3">
+        <div class="card accueil-services--train mb-3" data-section="train">
           <div class="row w-100 text-center d-flex  justify-content-center g-0">
             <div class="img-service col-5 col-sm-12 p-2 p-md-3 p-lg-4 p-xl-5">
               <img src="/assets/img/Services/Background (20).svg" class="img-fluid rounded-5"
@@ -129,7 +129,7 @@
                   petit train.</p>
               </div>
             </div>
-            <button class="col-md-5 col-lg-3 rounded-5 mt-2 fs-5" type="button">Voir plus
+            <button class="train-btn col-3 col-sm-5 rounded-5 mt-2 fs-5" type="button">Voir plus
             </button>
           </div>
         </div>
@@ -149,7 +149,7 @@
   </div>
   <div class="container-animaux row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center mt-lg-5">
     <div class="col-6  mx-5 mx-md-2">
-      <div class="card  accueil-card--animaux col-8 h-100 mx-auto">
+      <div class="card  accueil-card--renne col-8 h-100 mx-auto">
         <img src="/assets/img/Accueil/Animaux star/Réné le cerf.svg" class="card-img-top rounded-circle"
           alt="Portrait d'un renne blanc">
         <div class="card-body rounded-5 text-center p-1">
@@ -159,7 +159,7 @@
       </div>
     </div>
     <div class="col-6 mx-5 mx-md-2">
-      <div class="card accueil-card--animaux col-8 h-100 mx-auto">
+      <div class="card accueil-card--flamant col-8 h-100 mx-auto">
         <img src="/assets/img/Accueil/Animaux star/Jack le flamant rose.svg" class="card-img-top rounded-circle"
           alt="Portrait d'un flamant rose">
         <div class="card-body rounded-5 text-center p-1">
@@ -169,7 +169,7 @@
       </div>
     </div>
     <div class="col-6 mx-5 mx-md-2">
-      <div class="card accueil-card--animaux col-8 h-100 mx-auto">
+      <div class="card accueil-card--ouistiti col-8 h-100 mx-auto">
         <img src="/assets/img/Jungle/Ouistiti.webp" class="card-img-top rounded-circle"
           alt="Portrait d'un ouistiti">
         <div class="card-body rounded-5 text-center p-1">
@@ -212,20 +212,21 @@
     <button type="button" class="avis-button col-lg-3 fs-5 fw-semibold rounded-3">Donnez votre avis !!</button>
   </div>
   </div>
+  <div class="overlay"></div>
   <div class="modal-form col-6">
     <img class="modal-form--exit" src="/assets/img/Accueil/croix.svg" alt="Image d'une croix">
-    <form class="row g-3" method="post" action="#">
+    <form id="avis-form" class="row g-3" method="post" >
       <div class="col-md-6">
         <label for="inputNom" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="inputNom" required minlength="4" maxlength="20" size="22">
+        <input type="text" class="form-control" id="inputNom" placeholder="Nom" required minlength="4" maxlength="20" size="22">
       </div>
       <div class="col-md-6">
         <label for="inputDate" class="form-label">Date de visite</label>
-        <input type="date" class="form-control" id="inputDate">
+        <input type="date" required class="form-control" id="inputDate">
       </div>
       <div class="col-12">
-        <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
-        <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
+        <label for="inputText" class="form-texte">Votre commentaire ici</label>
+        <input type="text" class="form-control" id="inputText" placeholder="Commentaires" required minlength="4" maxlength="100" size="102"">
         </div>
         <div class=" note d-flex flex-column align-items-center">
         <div class="content-etoile d-inline-flex justify-content-center">
@@ -242,3 +243,5 @@
     </form>
   </div>
 </section>
+
+
