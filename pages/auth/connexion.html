@@ -1,0 +1,22 @@
+<section class="section-connexion text-center">
+  <h1 class="pt-5">Connexion</h1>
+  <div class="container-fluid connexion d-flex flex-column  align-items-center py-5">
+    <form id="form-connexion" class="col-10 d-flex flex-column  align-items-center my-auto" method="post">
+      <div class="mb-3 col-9">
+        <label for="emailInput" class="form-label fs-5">Email</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="test@mail.fr" name="Email" required>
+        <div id="emailHelp" class="form-text">Ne jamais partager votre Email avec qui que ce soit.</div>
+      </div>
+      <div class="mb-3 col-9">
+        <label for="PasswordInput" class="form-label fs-5">Mot de passe</label>
+        <input type="password" class="form-control" id="PasswordInput" placeholder="****" name="Password" required>
+      </div>
+      <div class="text-center">
+        <button id="buttonConnexion" type="button" class="btn btn-primary" data-show="disconnected">Connexion</button>
+      </div>
+      <div class="text-center">
+        <button id="buttonDeco" type="button" class="btn btn-primary" data-show="connected">Déconnexion</button>
+      </div>
+    </form>
+  </div>
+</section>
