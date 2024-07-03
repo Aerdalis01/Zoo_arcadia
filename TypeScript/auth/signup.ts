@@ -14,3 +14,16 @@ else{
     return false;
 }
 }
+
+function validateConfirmationPassword(PasswordInput: HTMLInputElement, ValidatePasswordInput: HTMLInputElement){
+  if(PasswordInput.value == ValidatePasswordInput.value){
+      ValidatePasswordInput.classList.add("is-valid");
+      ValidatePasswordInput.classList.remove("is-invalid");
+      return true;
+  }
+  else{
+      ValidatePasswordInput.classList.add("is-invalid");
+      ValidatePasswordInput.classList.remove("is-valid");
+      return false;
+  }
+}

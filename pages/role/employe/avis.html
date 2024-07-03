@@ -34,13 +34,13 @@
 </section>
 <section class="gestion-animaux text-center d-flex flex-column justify-content-center align-items-center py-5">
   <h2>Rapport repas animaux</h2>
-  <div class="animaux-form">
+  <form class="animaux-form">
     <div class="form-check-inline">
       <input type="radio" name="habitats" id="hab1">
       <label for="hab1">Marais</label>
-      <input  type="radio" name="habitats"  id="hab2">
+      <input type="radio" name="habitats" id="hab2">
       <label for="hab2">Savane</label>
-      <input  type="radio" name="habitats"  id="hab3">
+      <input type="radio" name="habitats" id="hab3">
       <label for="hab3">Jungle
       </label>
     </div>
@@ -80,14 +80,6 @@
       </select>
     </div>
     <div class="mb-3">
-      <label for="raceInput" class="form-label">Race</label>
-      <input type="text" class="form-control" id="raceInput" data-show="admin">
-    </div>
-    <div class="mb-3">
-      <label for="habInput" class="form-label">Habitat</label>
-      <input type="text" class="form-control" id="habInput" data-show="admin">
-    </div>
-    <div class="mb-3">
       <label for="etatInput" class="form-label">Etat</label>
       <input type="text" class="form-control" id="etatInput" required>
     </div>
@@ -99,11 +91,10 @@
       <label for="dateInput" class="form-label">Date de passage</label>
       <input type="date" class="form-control" id="dateInput" required>
     </div>
-    <div class="mb-3">
+    <div class="mb-3" data-show="veto">
       <label for="comInput" class="form-label">Commentaire du vérérinaire</label>
-      <input type="text" class="form-control" id="comInput" data-show="veto">
+      <input type="text" class="form-control" id="comInput" >
     </div>
-  </div>
-  </div>
-  <button type="submit">Envoyer</button>
+    <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
+  </form>
 </section>
