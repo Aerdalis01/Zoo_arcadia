@@ -68,8 +68,6 @@ avisModalClose.addEventListener("click", () => {
   avisOverlay.classList.remove("open");
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-
 
   avisForm.addEventListener("submit", function(event: Event) {
     event.preventDefault();
@@ -85,4 +83,3 @@ document.addEventListener("DOMContentLoaded", () => {
       alert('Votre avis a été envoyé avec succès? Merci pour votre retour!');
       avisForm.reset();
   });
-});

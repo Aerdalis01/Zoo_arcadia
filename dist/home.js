@@ -67,17 +67,15 @@ avisModalClose.addEventListener("click", () => {
     avisModal.classList.remove("open");
     avisOverlay.classList.remove("open");
 });
-document.addEventListener("DOMContentLoaded", () => {
-    avisForm.addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert;
-        console.log(avisForm);
-        avisFormData.forEach((value, key) => {
-            avisFormObject[key] = value;
-        });
-        console.log(avisFormObject);
-        alert('Votre avis a été envoyé avec succès? Merci pour votre retour!');
-        avisForm.reset();
+avisForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert;
+    console.log(avisForm);
+    avisFormData.forEach((value, key) => {
+        avisFormObject[key] = value;
     });
+    console.log(avisFormObject);
+    alert('Votre avis a été envoyé avec succès? Merci pour votre retour!');
+    avisForm.reset();
 });
 //# sourceMappingURL=home.js.map

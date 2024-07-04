@@ -1,0 +1,127 @@
+<section class="gestion-admin">
+  <div class="container my-4">
+    <h2>Gestion administrative</h2>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="adminTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard"
+          type="button" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="vetofile-tab" data-bs-toggle="tab" data-bs-target="#vetofile" type="button"
+          role="tab" aria-controls="vetofile" aria-selected="false">Rapport vétérinaire</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button" role="tab"
+          aria-controls="signup" aria-selected="false">Création compte</button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+        <div class="container my-4">
+          <h2>Tableau de Bord d'Administration</h2>
+          <div>
+            <label for="dateFilter">Filtrer par date:</label>
+            <input type="date" id="dateFilter">
+          </div>
+          <div>
+            <label for="animalFilter">Filtrer par animal:</label>
+            <select id="animalFilter">
+              <option value="">Tous les animaux</option>
+              <option value="1">René</option>
+              <option value="2">Jack</option>
+              <option value="3">Olaf</option>
+              <option value="4">Lisa</option>
+              <option value="5">Alex</option>
+              <option value="6">Algor</option>
+              <option value="7">Flocon</option>
+              <option value="11">Basile</option>
+              <option value="12">Sophie</option>
+              <option value="13">Ramos</option>
+              <option value="14">Babeth</option>
+              <option value="15">Leila</option>
+              <option value="16">Joe</option>
+              <option value="17">Eliott</option>
+              <option value="21">Jango</option>
+              <option value="22">Jérémie</option>
+              <option value="23">Léo</option>
+              <option value="24">Gaston</option>
+              <option value="25">Alban</option>
+              <option value="26">Benoit</option>
+              <option value="27">Sarah</option>
+            </select>
+          </div>
+          <button id="applyFiltersBtn">Appliquer les filtres</button>
+
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>ID de l'Animal</th>
+                <th>Prénom</th>
+                <th>Date de Vue</th>
+                <th>Nombre de vues</th>
+              </tr>
+            </thead>
+            <tbody id="view-list">
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <!-- Les données seront insérées ici -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="vetofile" role="tabpanel" aria-labelledby="vetofile-tab">
+        <h3>Compte rendu vétérinaire</h3>
+        <div class="table-wrapper">
+          <table id="data-veto" class="table table-striped-columns table-hover table-vet">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Race</th>
+                <th scope="col">Habitat</th>
+                <th scope="col">Etat</th>
+                <th scope="col">Nourriture proposé</th>
+                <th scope="col">Date</th>
+                <th scope="col">Commentaire du vétérinaire</th>
+              </tr>
+            </thead>
+            <tbody id="data-table-body">
+              <tr>
+                <td data-label="ID">1</td>
+                <td data-label="Nom">2</td>
+                <td data-label="Race">3</td>
+                <td data-label="Habitat">3</td>
+                <td data-label="Etat">4</td>
+                <td data-label="Nourriture Proposé">5</td>
+                <td data-label="Date">6</td>
+                <td data-label="Commentaires">Animal en bonne santé, echographie programmé.</td>
+              </tr>
+              <tr>
+                <td data-label="ID">1</td>
+                <td data-label="Nom">2</td>
+                <td data-label="Race">3</td>
+                <td data-label="Habitat">3</td>
+                <td data-label="Etat">4</td>
+                <td data-label="Nourriture Proposé">5</td>
+                <td data-label="Date">6</td>
+                <td data-label="Commentaires">7</td>
+              </tr>
+              <!-- Les données seront insérées ici -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+        <h3>Création de compte</h3>
+        <button class="btnSignup" type="button">Créer un compte</button></a>
+      </div>
+    </div>
+  </div>
+</section>

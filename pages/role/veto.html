@@ -1,0 +1,67 @@
+<section class="gestion-veto">
+<h2>Rapport repas animaux</h2>
+        <form class="animaux-form">
+          <div class="form-check-inline">
+            <input type="radio" name="habitats" id="hab1">
+            <label for="hab1">Marais</label>
+            <input type="radio" name="habitats" id="hab2">
+            <label for="hab2">Savane</label>
+            <input type="radio" name="habitats" id="hab3">
+            <label for="hab3">Jungle
+            </label>
+          </div>
+
+          <div class="select-group-animaux ">
+            <select id="select-hab1">
+              <option value="">Sélectionnez une option</option>
+              <option value="habitats1-1">cerf</option>
+              <option value="habitats1-2">flamant</option>
+              <option value="habitats1-3">heron</option>
+              <option value="habitats1-4">loutre</option>
+              <option value="habitats1-5">canard</option>
+              <option value="habitats1-6">castor</option>
+              <option value="habitats1-7">lapin</option>
+            </select>
+
+            <select id="select-hab2">
+              <option value="">Sélectionnez une option</option>
+              <option value="habitats2-1">elephant</option>
+              <option value="habitats2-2">girafe</option>
+              <option value="habitats2-3">rhinoceros</option>
+              <option value="habitats2-4">autruche</option>
+              <option value="habitats2-5">impala</option>
+              <option value="habitats2-6">gnou</option>
+              <option value="habitats2-7">zebre"</option>
+            </select>
+
+            <select id="select-hab3">
+              <option value="">Sélectionnez une option</option>
+              <option value="habitats3-1">ouistiti</option>
+              <option value="habitats3-2">fourmilier</option>
+              <option value="habitats3-3">chimpanzé</option>
+              <option value="habitats3-4">paresseux</option>
+              <option value="habitats3-5">toucan</option>
+              <option value="habitats3-6">tatoo</option>
+              <option value="habitats3-7">ara</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="etatInput" class="form-label">Etat</label>
+            <input type="text" class="form-control" id="etatInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="foodInput" class="form-label">Nourritue proposé</label>
+            <input type="text" class="form-control" id="foodInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="dateInput" class="form-label">Date de passage</label>
+            <input type="date" class="form-control" id="dateInput" required>
+          </div>
+          <div class="mb-3" data-show="veto">
+            <label for="comInput" class="form-label">Commentaire du vérérinaire</label>
+            <input type="text" class="form-control" id="comInput">
+          </div>
+          <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
+        </form>
+      </div>
+    </section>

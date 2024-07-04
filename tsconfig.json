@@ -106,5 +106,5 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["TypeScript/index.ts", "TypeScript/home.ts","TypeScript/avis.ts","TypeScript/auth/connexion.ts","TypeScript/auth/script.ts","TypeScript/auth/signup.ts" ]
+  "include": ["TypeScript/index.ts", "TypeScript/home.ts","TypeScript/animaux.ts","TypeScript/avis.ts","TypeScript/admin.ts","TypeScript/veto.ts","TypeScript/auth/connexion.ts","TypeScript/auth/script.ts","TypeScript/auth/signup.ts" ]
 }
