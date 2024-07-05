@@ -1,11 +1,13 @@
-<section class="section-connexion text-center">
+<section id="connexionPage" class="section-connexion text-center">
   <h1 class="pt-5">Connexion</h1>
   <div class="container-fluid connexion d-flex flex-column  align-items-center py-5">
     <form id="form-connexion" class="col-10 d-flex flex-column  align-items-center my-auto" method="post">
       <div class="mb-3 col-9">
         <label for="emailInput" class="form-label fs-5">Email</label>
         <input type="email" class="form-control" id="emailInput" placeholder="test@mail.fr" name="Email" required>
-        <div></div>
+        <div class="invalid-feedback">
+            Le mail ou le mot de passe sont incorrect.
+        </div>
       </div>
       <div class="mb-3 col-9">
         <label for="PasswordInput" class="form-label fs-5">Mot de passe</label>
@@ -15,7 +17,7 @@
         <button id="buttonConnexion" type="button" class="btn btn-primary" data-show="disconnected">Connexion</button>
       </div>
       <div class="text-center">
-        <button id="buttonDeco" type="button" class="btn btn-primary" data-show="connected">Déconnexion</button>
+        <button id="btn4NavbarDeco" type="button" class="btn btn-primary" data-show="connected">Déconnexion</button>
       </div>
     </form>
   </div>

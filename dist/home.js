@@ -18,6 +18,8 @@ const avisModalClose = document.querySelector(".modal-form--exit");
 const avisForm = document.getElementById("avis-form");
 const avisFormData = new FormData(avisForm);
 const avisFormObject = {};
+const stars = document.querySelectorAll('.etoile');
+const ratingInput = document.getElementById('rating');
 servicesElements.forEach((child) => {
     child.addEventListener("click", (event) => {
         event.preventDefault();
@@ -67,15 +69,36 @@ avisModalClose.addEventListener("click", () => {
     avisModal.classList.remove("open");
     avisOverlay.classList.remove("open");
 });
-avisForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert;
-    console.log(avisForm);
-    avisFormData.forEach((value, key) => {
-        avisFormObject[key] = value;
+stars.forEach(star => {
+    star.addEventListener('click', () => {
+        const rating = parseInt(star.getAttribute('data-value') || '0', 10);
+        ratingInput.value = rating.toString();
+        // Reset all stars
+        stars.forEach(s => s.src = '/assets/img/Accueil/star.svg');
+        // Fill in stars up to the one clicked
+        for (let i = 0; i < rating; i++) {
+            stars[i].src = '/assets/img/Accueil/star-filled.svg';
+        }
     });
-    console.log(avisFormObject);
-    alert('Votre avis a été envoyé avec succès? Merci pour votre retour!');
+});
+avisForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêcher le comportement par défaut du formulaire
+    // Récupérer les valeurs des champs du formulaire
+    const avisFormNom = document.getElementById('inputNom').value;
+    const avisFormDate = document.getElementById('inputDate').value;
+    const avisFormText = document.getElementById('inputText').value;
+    const avisFormRating = document.getElementById('rating').value;
+    // Afficher les données dans la console
+    console.log('Nom:', avisFormNom);
+    console.log('Date de visite:', avisFormDate);
+    console.log('Commentaires:', avisFormText);
+    console.log('Rating:', avisFormRating);
+    // Réinitialiser le formulaire après soumission
     avisForm.reset();
+    // Réinitialiser l'affichage des étoiles
+    const stars = document.querySelectorAll('.etoile img');
+    stars.forEach(star => {
+        star.setAttribute('src', '/assets/img/Accueil/star.svg');
+    });
 });
 //# sourceMappingURL=home.js.map

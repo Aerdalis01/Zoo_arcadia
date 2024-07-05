@@ -83355,8 +83355,8 @@ textarea.form-control-lg {
 }
 
 .etoile {
-  filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(158%) hue-rotate(14deg) brightness(92%) contrast(88%);
   cursor: pointer;
+  z-index: 9999;
 }
 
 .avis-btn {
@@ -119240,7 +119240,6 @@ textarea.form-control-lg {
 }
 
 .etoile {
-  filter: brightness(0) saturate(100%) invert(58%) sepia(10%) saturate(158%) hue-rotate(14deg) brightness(92%) contrast(88%);
   cursor: pointer;
 }
 

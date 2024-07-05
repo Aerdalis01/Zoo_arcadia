@@ -215,10 +215,11 @@
   <div class="overlay"></div>
   <div class="modal-form col-6">
     <img class="modal-form--exit" src="/assets/img/Accueil/croix.svg" alt="Image d'une croix">
-    <form id="avis-form" class="row g-3" method="post" >
+    <form id="avis-form" class="row g-3" method="post">
       <div class="col-md-6">
         <label for="inputNom" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="inputNom" placeholder="Nom" required minlength="4" maxlength="20" size="22">
+        <input type="text" class="form-control" id="inputNom" placeholder="Nom" required minlength="4" maxlength="20"
+          size="22">
       </div>
       <div class="col-md-6">
         <label for="inputDate" class="form-label">Date de visite</label>
@@ -226,17 +227,19 @@
       </div>
       <div class="col-12">
         <label for="inputText" class="form-texte">Votre commentaire ici</label>
-        <input type="text" class="form-control" id="inputText" placeholder="Commentaires" required minlength="4" maxlength="100" size="102"">
-        </div>
-        <div class=" note d-flex flex-column align-items-center">
+        <input type="text" class="form-control" id="inputText" placeholder="Commentaires" required minlength="4"
+          maxlength="100" size="102"">
+            </div>
+            <div class=" note d-flex flex-column align-items-center">
         <div class="content-etoile d-inline-flex justify-content-center">
-          <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile" data-value="1"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile" data-value="2"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile" data-value="3"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile" data-value="4"></div>
+          <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile" data-value="5"></div>
         </div>
       </div>
+      <input type="hidden" id="rating" name="rating" value="0">
       <div class="col-12 d-flex justify-content-center">
         <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
       </div>

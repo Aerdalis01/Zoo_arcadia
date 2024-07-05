@@ -46,10 +46,10 @@
           </div>
           <div class="container_icone-user col-4 d-flex align-items-center justify-content-end ">
             <img class="icon-user" src="/assets/img/Accueil/Seconnecter.svg" data-show="disconnected" alt="Icone se connecter">
-            <button class="btn btn-navbar--deco btn-warning fw-semibold" type="button" data-show="connected" >Se déconnecter</button>
+            <button id="btn2NavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold" type="button" data-show="connected" >Se déconnecter</button>
           </div>
-          <div class="container_btn-navbar  col-md-3 d-flex align-items-center justify-content-end">
-            <button class="btn btn-navbar btn-warning fw-semibold" type="button" data-show="disconnected" >Se connecter</button>
+          <div  class="container_btn-navbar  col-md-3 d-flex align-items-center justify-content-end">
+            <button id="btnNavbarCo" class="btn btn-navbar btn-warning fw-semibold" type="button" data-show="disconnected" >Se connecter</button>
             <button id="btnNavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold" type="button" data-show="connected" >Se déconnecter</button>
           </div>
         </div>
@@ -77,7 +77,7 @@
         </li>
         <li class="nav-item item-connexion col-3 mb-5 w-100">
           <a class="nav-link fs-1 fw-semibold" href="/connexion" data-show="disconnected">Se connecter</a>
-          <a class="nav-link--deco fs-1 fw-semibold"  data-show="connected">Se déconnecter</a>
+          <a id="btn3NavbarDeco" class="nav-link--deco fs-1 fw-semibold"  data-show="connected">Se déconnecter</a>
         </li>
       </ul>
     </div>
@@ -157,10 +157,9 @@
     </section>
   </footer>
   <script src="./node_modules/bootstrap/js/bootstrap.js"></script>
-
-  <script src="/dist/auth/script.js"></script>
   <script src="/dist/index.js"></script>
   <script type="module" src="/Router/router.js"></script>
+  <script src="/dist/auth/script.js"></script>
 </body>
 
 </html>

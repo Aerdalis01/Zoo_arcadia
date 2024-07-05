@@ -14,6 +14,8 @@ const avisModalClose = document.querySelector(
 const avisForm = document.getElementById("avis-form") as HTMLFormElement;
 const avisFormData = new FormData(avisForm);
 const avisFormObject: { [key: string]: string } = {};
+const stars: NodeListOf<HTMLImageElement> = document.querySelectorAll('.etoile');
+const ratingInput: HTMLInputElement = document.getElementById('rating') as HTMLInputElement;
 
 
 servicesElements.forEach((child) => {
@@ -68,18 +70,43 @@ avisModalClose.addEventListener("click", () => {
   avisOverlay.classList.remove("open");
 });
 
+stars.forEach(star => {
+  star.addEventListener('click', () => {
+    const rating = parseInt(star.getAttribute('data-value') || '0', 10);
+    ratingInput.value = rating.toString();
 
-  avisForm.addEventListener("submit", function(event: Event) {
-    event.preventDefault();
-    alert
-    console.log(avisForm);
+    // Reset all stars
+    stars.forEach(s => s.src = '/assets/img/Accueil/star.svg');
 
-    avisFormData.forEach((value, key) => {
-      avisFormObject[key] = value as string;
-
-    });
-      console.log(avisFormObject);
-      
-      alert('Votre avis a été envoyé avec succès? Merci pour votre retour!');
-      avisForm.reset();
+    // Fill in stars up to the one clicked
+    for (let i = 0; i < rating; i++) {
+      stars[i].src = '/assets/img/Accueil/star-filled.svg';
+    }
   });
+});
+
+avisForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Empêcher le comportement par défaut du formulaire
+
+  // Récupérer les valeurs des champs du formulaire
+  const avisFormNom = (document.getElementById('inputNom') as HTMLInputElement).value;
+const avisFormDate = (document.getElementById('inputDate') as HTMLInputElement).value;
+const avisFormText = (document.getElementById('inputText') as HTMLInputElement).value;
+const avisFormRating = (document.getElementById('rating') as HTMLInputElement).value;
+
+
+  // Afficher les données dans la console
+  console.log('Nom:', avisFormNom);
+  console.log('Date de visite:', avisFormDate);
+  console.log('Commentaires:', avisFormText);
+  console.log('Rating:', avisFormRating);
+
+  // Réinitialiser le formulaire après soumission
+  avisForm.reset();
+
+  // Réinitialiser l'affichage des étoiles
+  const stars = document.querySelectorAll('.etoile img');
+  stars.forEach(star => {
+    star.setAttribute('src', '/assets/img/Accueil/star.svg');
+  });
+});
