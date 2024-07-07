@@ -12,10 +12,10 @@ const modalConnexionExit = document.querySelector(
   ".connexion-exit"
 ) as HTMLElement;
 const btnSeConnecter = document.getElementById("btnNavbarCo") as HTMLElement;
-console.log(btnSeConnecter);
+
 
 // Ajoutez des logs pour le débogage
-console.log('Button Se Connecter:', btnSeConnecter);
+
 
 //variable pour rediriger vers les différent services
 
@@ -33,7 +33,6 @@ iconUser.addEventListener("click", () => {
 });
 btnSeConnecter.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log('Button Se Connecter clicked');
   window.location.replace('/connexion');
 });
 

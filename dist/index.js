@@ -9,9 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalConnexionOpen = document.getElementById("connexion");
     const modalConnexionExit = document.querySelector(".connexion-exit");
     const btnSeConnecter = document.getElementById("btnNavbarCo");
-    console.log(btnSeConnecter);
     // Ajoutez des logs pour le débogage
-    console.log('Button Se Connecter:', btnSeConnecter);
     //variable pour rediriger vers les différent services
     menuBurger.addEventListener("click", () => {
         modalMenu.classList.add("open");
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     btnSeConnecter.addEventListener("click", (event) => {
         event.preventDefault();
-        console.log('Button Se Connecter clicked');
         window.location.replace('/connexion');
     });
 });

@@ -22,42 +22,53 @@
           <div class="container_menu-burger col-4 d-flex justify-content-start align-items-center">
             <img class="menu-burger" src="/assets/img/Accueil/Burger Nav.svg" alt="Menu burger">
           </div>
-          <div class="container_logo-arcadia col-4 col-md-2 d-flex  justify-content-center justify-content-md-start">
+          <div class="container_logo-arcadia col-4 col-md-2  d-flex  justify-content-center justify-content-md-start">
             <a class="navbar-brand m-0" href="/">
               <img class="logo-arcadia align-self-center" src="/assets/img/Accueil/Logo.svg" alt="Logo du zoo Arcadia">
             </a>
             <h3 class="align-items-center text-center px-4 text-warning d-none d-lg-flex">Zoo Arcadia</h3>
           </div>
-          <div class="collapse navbar-collapse col-7" id="navbarNav">
-            <ul class="navbar-nav text-center w-100 ">
-              <li class="nav-item col-3 ">
-                <a class="nav-link active text-warning fw-semibold" aria-current="page" href="/">Accueil</a>
+          <div class="collapse navbar-collapse col-7 col-xl-8" id="navbarNav">
+            <ul class="navbar-nav text-center w-100 d-flex justify-content-center">
+              <li class="nav-item col-2 ">
+                <a class="nav-link active text-warning fw-semibold fs-5" aria-current="page" href="/">Accueil</a>
               </li>
-              <li class="nav-item col-3">
-                <a class="nav-link text-warning fw-semibold" href="/services">Services</a>
+              <li class="nav-item col-2">
+                <a class="nav-link text-warning fw-semibold fs-5" href="/services">Services</a>
               </li>
-              <li class="nav-item col-3">
-                <a class="nav-link text-warning fw-semibold" href="/habitats">Habitats</a>
+              <li class="nav-item col-2">
+                <a class="nav-link text-warning fw-semibold fs-5" href="/habitats">Habitats</a>
               </li>
-              <li class="nav-item col-3">
-                <a class="nav-link text-warning fw-semibold" href="/contact">Contact</a>
+              <li class="nav-item col-2">
+                <a class="nav-link text-warning fw-semibold fs-5" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item col-2" data-show="connected">
+                <div>
+                  <a class="nav-link text-warning fw-semibold fs-5" href="/employe" data-show="employe">Espace
+                    employe</a>
+                  <a class="nav-link text-warning fw-semibold fs-5" href="/veto" data-show="veto">Espace vétérinaire</a>
+                  <a class="nav-link text-warning fw-semibold fs-5" href="/admin" data-show="admin">Espace admin</a>
+                </div>
               </li>
             </ul>
           </div>
-          <div class="container_icone-user col-4 d-flex align-items-center justify-content-end ">
-            <img class="icon-user" src="/assets/img/Accueil/Seconnecter.svg" data-show="disconnected" alt="Icone se connecter">
-            <button id="btn2NavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold" type="button" data-show="connected" >Se déconnecter</button>
+          <div class="container_icone-user col-4  d-flex align-items-center justify-content-end ">
+            <img class="icon-user" src="/assets/img/Accueil/Seconnecter.svg" data-show="disconnected"
+              alt="Icone se connecter">
+            <button id="btn2NavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold" type="button"
+              data-show="connected">Se déconnecter</button>
           </div>
-          <div  class="container_btn-navbar  col-md-3 d-flex align-items-center justify-content-end">
-            <button id="btnNavbarCo" class="btn btn-navbar btn-warning fw-semibold" type="button" data-show="disconnected" >Se connecter</button>
-            <button id="btnNavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold" type="button" data-show="connected" >Se déconnecter</button>
+          <div class="container-btn--navbar  col-md-2  col-xl-2 d-flex align-items-center justify-content-end">
+            <button id="btnNavbarCo" class="btn btn-navbar btn-warning fw-semibold px-2" type="button"
+              data-show="disconnected">Se connecter</button>
+            <button id="btnNavbarDeco" class="btn btn-navbar--deco btn-warning fw-semibold px-2" type="button"
+              data-show="connected">Se déconnecter</button>
           </div>
         </div>
       </div>
     </nav>
     <!--Fin navbar-->
-    <div
-      class="container-fluid modal-menu  d-flex flex-column   align-items-center text-center h-100 w-100 p-0">
+    <div class="container-fluid modal-menu  d-flex flex-column   align-items-center text-center h-100 w-100 p-0">
       <div class="content-exit  d-flex justify-content-center align-items-center bg-primary  w-100">
         <a class="logo" href="/"><img src="/assets/img/Accueil/Logo.svg" alt="Logo du zoo Arcadia"></a>
         <img class="menu-exit" src="/assets/img/Accueil/croix.svg" alt="Image d'une croix">
@@ -75,9 +86,15 @@
         <li class="nav-item col-3 mb-5">
           <a class="nav-link fs-1 fw-semibold" href="/contact">Contact</a>
         </li>
+        <li class="nav-item col-3 mb-5" data-show="connected">
+          <a class="nav-link fs-1 fw-semibold" href="/employe" data-show="employe">Espace
+            employe</a>
+          <a class="nav-link fs-1 fw-semibold" href="/veto" data-show="veto">Espace vétérinaire</a>
+          <a class="nav-link fs-1 fw-semibold" href="/admin" data-show="admin">Espace admin</a>
+        </li>
         <li class="nav-item item-connexion col-3 mb-5 w-100">
           <a class="nav-link fs-1 fw-semibold" href="/connexion" data-show="disconnected">Se connecter</a>
-          <a id="btn3NavbarDeco" class="nav-link--deco fs-1 fw-semibold"  data-show="connected">Se déconnecter</a>
+          <a id="btn3NavbarDeco" class="nav-link--deco fs-1 fw-semibold" data-show="connected">Se déconnecter</a>
         </li>
       </ul>
     </div>
