@@ -4,35 +4,6 @@
     <h3>Pour laisser un message à notre équipe ou donnez votre avis c'est par ici.</h3>
   </div>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center pb-5 m-0 w-100">
-    <div class="contact-modal--avis">
-      <h3>Donnez votre avis</h3>
-      <form class="row g-3" method="post">
-        <div class="col-md-6">
-          <label for="inputNom" class="form-label">Nom</label>
-          <input type="text" class="form-control" id="inputNom" required minlength="4" maxlength="20" size="22">
-        </div>
-        <div class="col-md-6">
-          <label for="inputDate" class="form-label">Date de visite</label>
-          <input type="date" class="form-control" id="inputDate">
-        </div>
-        <div class="col-12">
-          <label for="inputTexte" class="form-texte">Votre commentaire ici</label>
-          <input type="text" class="form-control" id="inputText" minlength="4" maxlength="100" size="102"">
-        </div>
-        <div class=" note d-flex flex-column align-items-center">
-          <div class="content-etoile d-inline-flex justify-content-center">
-            <div><img class="etoile" src="/assets/img/Accueil/star-filled.svg" alt="image d'étoile"></div>
-            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-            <div><img class="etoile" src="/assets/img/Accueil/star.svg" alt="image d'étoile"></div>
-          </div>
-        </div>
-        <div class="col-12 d-flex justify-content-center pt-3">
-          <button type="submit" class="btn btn-warning rounded-5 fw-semibold">Envoyer</button>
-        </div>
-      </form>
-    </div>
     <div class="contact--mail d-flex flex-column align-items-center my-5">
       <div class="contact-modal--mail">
         <h3>Formulaire de contact</h3>
@@ -66,6 +37,10 @@
     <div class="row row-cols-1 row-cols-md-2">
       <div class="col">
         <div class="card mb-3">
+          <div class="d-flex justify-content-around w-100" >
+            <img id="cardHoraireZooModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe, admin">
+            <img id="cardHoraireZooSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+          </div>
           <div class="row w-100 text-center d-flex  justify-content-center g-0">
             <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
               <div
@@ -86,7 +61,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="card mb-3">
+        <div class="card mb-3"><div class="d-flex justify-content-around w-100" >
+          <img id="cardAccesZooModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe, admin">
+          <img id="cardAccesZooSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+        </div>
           <div class="row w-100 text-center d-flex  justify-content-center g-0">
             <div class="col d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
               <div

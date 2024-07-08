@@ -51,7 +51,7 @@
     bottom: 0
     z-index: 5
 
-  .carte--restaurant
+  .carte-restaurant
     position: fixed
     top: -400svh
     width: 100%
@@ -60,14 +60,19 @@
     z-index: 9999
     overflow: hidden
 
-  .carte--restaurant-content
+  .carte-restaurant--open
+    position: fixed
+    top: 0
+    
+  .carte-restaurant--content
     position: relative
     z-index: 999
 
-  .carte--restaurant-img
+  .carte-restaurant--img
     @include media-breakpoint-up(md)
-      content: url("/assets/img/Services/Menu.svg")
-  .carte--restaurant-croix
+      content: url("/assets/img/Services/menu.svg")
+
+  .carte-restaurant--croix
     position: absolute
     top: 10px
     right: 10px
@@ -120,6 +125,9 @@
     z-index: 9999
     overflow: hidden
 
+  .carte--open
+    position: fixed
+    top: 0
 
   .carte-content
     position: relative

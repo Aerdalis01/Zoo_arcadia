@@ -95275,6 +95275,7 @@ textarea.form-control-lg {
 
 .title-savane {
   position: relative;
+  z-index: 9999;
 }
 
 .vague-savane {
@@ -95329,6 +95330,7 @@ textarea.form-control-lg {
 
 .title-jungle {
   position: relative;
+  z-index: 9999;
 }
 
 .bandeau--bottom {
@@ -107250,7 +107252,7 @@ textarea.form-control-lg {
   z-index: 5;
 }
 
-.carte--restaurant {
+.carte-restaurant {
   position: fixed;
   top: -400svh;
   width: 100%;
@@ -107260,18 +107262,23 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 
-.carte--restaurant-content {
+.carte-restaurant--open {
+  position: fixed;
+  top: 0;
+}
+
+.carte-restaurant--content {
   position: relative;
   z-index: 999;
 }
 
 @media (min-width: 768px) {
-  .carte--restaurant-img {
-    content: url("/assets/img/Services/Menu.svg");
+  .carte-restaurant--img {
+    content: url("/assets/img/Services/menu.svg");
   }
 }
 
-.carte--restaurant-croix {
+.carte-restaurant--croix {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -107344,6 +107351,11 @@ textarea.form-control-lg {
   backdrop-filter: blur(5px);
   z-index: 9999;
   overflow: hidden;
+}
+
+.carte--open {
+  position: fixed;
+  top: 0;
 }
 
 .carte-content {
@@ -131121,6 +131133,13 @@ textarea.form-control-lg {
 .animaux .animaux-form, .animaux--jungle .animaux-form, .animaux--savane .animaux-form, .animaux--marais .animaux-form {
   display: none;
 }
+.animaux .animaux-form .visible, .animaux--jungle .animaux-form .visible, .animaux--savane .animaux-form .visible, .animaux--marais .animaux-form .visible {
+  display: block;
+}
+.animaux .visible, .animaux--marais .visible, .animaux--savane .visible, .animaux--jungle .visible {
+  display: block;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -142979,6 +142998,10 @@ textarea.form-control-lg {
 .invalid {
   border-color: #E75D23;
   box-shadow: 2px 2px 2px 2px #E75D23;
+}
+
+.gestion-employe {
+  height: 75svh;
 }
 
 .select-group-animaux select {

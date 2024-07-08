@@ -1,6 +1,7 @@
 "use strict";
 const gestionAvisForm = document.querySelector('#gestion-avis-form');
 const animauxFormulaire = document.querySelector('.animaux-formulaire');
+const formEmploye = document.querySelector('.animaux-formulaire');
 if (gestionAvisForm) {
     gestionAvisForm.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -50,4 +51,19 @@ animauxFormulaire.addEventListener('submit', (event) => {
     alert('Votre avis a été envoyé !');
     // Ajoutez ici la logique pour envoyer les données au serveur
 });
-//# sourceMappingURL=avis.js.map
+// Fonction pour convertir FormDataCustom en FormData natif
+function convertToFormData(formDataCustom) {
+    const formData = new FormData();
+    formData.append('habitats', formDataCustom.habitats);
+    formData.append('animalSelectionne', formDataCustom.animalSelectionne);
+    formData.append('etat', formDataCustom.etat);
+    formData.append('nourritureProposee', formDataCustom.nourritureProposee);
+    formData.append('datePassage', formDataCustom.datePassage);
+    return formData;
+}
+// Envoi du formulaire avec fetch par exemple
+fetch('/api/submit-form', {
+    method: 'POST',
+    body: formData
+});
+//# sourceMappingURL=employe.js.map

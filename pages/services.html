@@ -7,9 +7,9 @@
         <h5 class="text-white">Une petite faim ou une envie de déjeuner ?</h5>
       </div>
       <div class="restaurations--content-orangeSvg">
-        <img class="restaurations--svg-rectangle img-fluid w-100" src="/assets/img/Services/Svgdeco/RecOrMob.svg"
+        <img id="cardRestoModif" class="restaurations--svg-rectangle img-fluid w-100" src="/assets/img/Services/Svgdeco/RecOrMob.svg"
           alt="Rectangle Orange">
-        <img class="restaurations--svg-ellipse img-fluid w-100" src="/assets/img/Accueil/demiElOrLg.svg"
+        <img id="carRestoSupp" class="restaurations--svg-ellipse img-fluid w-100" src="/assets/img/Accueil/demiElOrLg.svg"
           alt="ellipse Orange">
       </div>
     </div>
@@ -17,6 +17,10 @@
       <div class="row d-flex align-items-center justify-content-center  g-0 ">
         <div class="card-group px-sm-2 px-md-3 px-lg-4 px-xl-5">
           <div class="card restaurations--card mb-3">
+            <div class="d-flex justify-content-around" >
+              <img id="cardSnackModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+              <img id="cardSnackDelete" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+            </div>
             <div class="row w-100 h-100 text-center d-flex  justify-content-center g-0">
               <div class="col-6 col-sm-12 p-2 p-md-3 p-lg-4 p-xl-5">
                 <img src="/assets/img/Services/Rectangle.svg" class="img-fluid rounded-5"
@@ -27,15 +31,20 @@
                   <h4 class="card-title">Restaurant</h4>
                   <p class="card-text">Goûter à la cuisine de notre chef le temps d’un déjeuner.
                   </p>
-                  <button id="VoirMenu" class="col-md-5 rounded-5 mb-2 fs-5" type="button">Voir la carte
+                  <button id="voirMenu" class="col-md-5 rounded-5 mb-2 fs-5" type="button">Voir la carte
                   </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="card mb-3">
+            <div class="d-flex justify-content-around" >
+              <img id="cardGlaceModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+              <img id="cardGlaceSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+            </div>
             <div class="row  w-100 h-100 text-center d-flex  justify-content-center g-0">
               <div class="col-6 col-sm-12 d-flex justify-content-center p-2 py-md-3 py-lg-4 py-xl-5">
+                
                 <div class="restaurations--card-body bg-warning rounded-5 p-1">
                   <h4 class="card-title">Snack</h4>
                   <p class="card-text">Envie d’un snack, d’un hot dog ou d’une boisson fraiche, profitez d’un de nos
@@ -49,6 +58,10 @@
             </div>
           </div>
           <div class="card mb-3">
+            <div class="d-flex justify-content-around" >
+              <img id="cardVisiteModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+              <img id="cardVisiteSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+            </div>
             <div class="row w-100 h-100 text-center d-flex  justify-content-center g-0">
               <div class="img-restauration col-6 col-sm-12 p-2 p-md-3 p-lg-4 p-xl-5">
                 <img src="/assets/img/Services/Rectangle-2.svg" class="img-fluid rounded-5"
@@ -65,10 +78,10 @@
           </div>
         </div>
       </div>
-      <div class="carte--restaurant d-flex justify-content-center">
-        <div class="carte--restaurant-content">
-          <img class="carte--restaurant-croix img-fluid" src="/assets/img/Services/croixBlanche.svg" alt="">
-          <img class="carte--restaurant-img rounded-5 img-fluid w-100"
+      <div class="carte-restaurant d-flex justify-content-center align-items-center">
+        <div class="carte-restaurant--content">
+          <img class="carte-restaurant--croix img-fluid" src="/assets/img/Services/croixBlanche.svg" alt="image de croix blanche">
+          <img class="carte-restaurant--img rounded-5 img-fluid w-100"
             src="/assets/img/Services/Mnu restaurant mobil.svg" alt="plan du zoo">
         </div>
       </div>
@@ -87,6 +100,10 @@
     </div>
     <div class="container-fluid visite--container px-0">
       <div class="card mb-3">
+        <div class="d-flex justify-content-around" >
+          <img id="cardTrainModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+          <img id="cardTrainSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+        </div>
         <div class="row w-100 text-center d-flex  justify-content-center g-0">
           <div class="img-restauration col-6 p-2 p-md-3 p-lg-4 p-xl-5">
             <img src="/assets/img/Services/Background (21).svg" class="img-fluid rounded-5 col-10"
@@ -116,6 +133,10 @@
     </div>
     <div class="container-fluid train--container px-0">
       <div class="card mb-3">
+        <div class="d-flex justify-content-around" >
+          <img id="cardDepartVisiteModif" src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+          <img id="cardDepartVisiteSupp" src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+        </div>
         <div class="row w-100 text-center d-flex  justify-content-center  g-0">
           <div class="col-6 p-2 p-md-3 p-lg-4 p-xl-5">
             <img src="/assets/img/Services/Background (20).svg" class="img-fluid rounded-5 col-10"
@@ -132,6 +153,10 @@
         </div>
       </div>
       <div class="card mb-3">
+        <div class="d-flex justify-content-around" >
+          <img src="/assets/img/Services/pencil-square.svg" alt="Image de stylo dans un cadre"data-show="employe">
+          <img src="/assets/img/Services/trash-fill.svg" alt="Image de poubelle" data-show="admin">
+        </div>
         <div class="row w-100 text-center d-flex  justify-content-center g-0">
           <div class="col-6 d-flex justify-content-center p-md-3 p-lg-4 p-xl-5">
             <div
@@ -166,9 +191,9 @@
           </div>
         </div>
       </div>
-      <div class="carte d-flex justify-content-center">
+      <div class="carte d-flex justify-content-center align-items-center">
         <div class="carte-content">
-          <img class="carte--zoo-croix img-fluid" src="/assets/img/Services/croixBlanche.svg" alt="">
+          <img class="carte--zoo-croix img-fluid" src="/assets/img/Services/croixBlanche.svg" alt="image d'une croix blanche">
           <img class="col-12 carte--zoo-img rounded-5 img-fluid w-100" src="/assets/img/Services/Carte du zoo.svg"
             alt="plan du zoo">
         </div>
