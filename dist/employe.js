@@ -62,8 +62,8 @@ function convertToFormData(formDataCustom) {
     return formData;
 }
 // Envoi du formulaire avec fetch par exemple
-fetch('/api/submit-form', {
-    method: 'POST',
-    body: formData
-});
+// fetch('/api/submit-form', {
+//   method: 'POST',
+//   body: formData
+// });
 //# sourceMappingURL=employe.js.map

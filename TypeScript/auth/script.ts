@@ -58,10 +58,8 @@ function eraseCookie(name: string) {
 function isConnected() {
   if (getToken() == null || getToken == undefined) {
     return false;
-    alert("Vous n'êtes pas connecté !")
   } else {
     return true;
-    alert('Vous êtes connecté !')
   }
 }
 

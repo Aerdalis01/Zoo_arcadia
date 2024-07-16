@@ -4,7 +4,7 @@ const mailInput = document.getElementById('emailInput');
 const mdpInput = document.getElementById('PasswordInput');
 btnSingin.addEventListener("click", checkCredentials);
 function checkCredentials() {
-    //Ici, il faudra appeler l'API pour vérifier les credentials en BDD
+    // Ici, il faudra appeler l'API pour vérifier les credentials en BDD
     if (mailInput.value == "admin@mail.com" && mdpInput.value == "123") {
         //Il faudra récupérer le vrai token
         const token = "lkjsdngfljsqdnglkjsdbglkjqskjgkfjgbqslkfdgbskldfgdfgsdgf";

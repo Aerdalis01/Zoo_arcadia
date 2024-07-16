@@ -48,11 +48,9 @@ function eraseCookie(name) {
 function isConnected() {
     if (getToken() == null || getToken == undefined) {
         return false;
-        alert("Vous n'êtes pas connecté !");
     }
     else {
         return true;
-        alert('Vous êtes connecté !');
     }
 }
 /*

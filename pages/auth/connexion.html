@@ -1,17 +1,17 @@
 <section id="connexionPage" class="section-connexion text-center">
   <h1 class="pt-5">Connexion</h1>
   <div class="container-fluid connexion d-flex flex-column  align-items-center py-5">
-    <form id="form-connexion" class="col-10 d-flex flex-column  align-items-center my-auto" method="post">
+    <form id="form-connexion" class="col-10 d-flex flex-column  align-items-center my-auto" method="post" action="/php/connexion.php">
       <div class="mb-3 col-9">
         <label for="emailInput" class="form-label fs-5">Email</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="test@mail.fr" name="Email" required>
+        <input type="email" class="form-control" id="emailInput" placeholder="test@mail.fr" name="emailInput" required>
         <div class="invalid-feedback">
             Le mail ou le mot de passe sont incorrect.
         </div>
       </div>
       <div class="mb-3 col-9">
         <label for="PasswordInput" class="form-label fs-5">Mot de passe</label>
-        <input type="password" class="form-control" id="PasswordInput" placeholder="****" name="Password" required>
+        <input type="password" class="form-control" id="PasswordInput" placeholder="****" name="PasswordInput" required>
       </div>
       <div class="text-center">
         <button id="buttonConnexion" type="button" class="btn btn-primary" data-show="disconnected">Connexion</button>
