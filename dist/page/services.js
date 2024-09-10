@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const apiClients_1 = require("./api/apiClients");
+const apiClients_1 = require("../api/apiClients");
 const voirLeMenu = document.getElementById('voirMenu');
 const menuExit = document.querySelector('.carte-restaurant--croix');
 const menuResto = document.querySelector('.carte-restaurant');

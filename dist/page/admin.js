@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const apiClients_1 = require("./api/apiClients");
+const urlUtils_1 = require("../utils/urlUtils");
 const btnSignup = document.querySelector('.btnSignup');
 document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -43,7 +43,7 @@ btnSignup.addEventListener('click', () => {
 });
 //Méthode pour charger les informations de la pages via Fetch
 const admin = () => __awaiter(void 0, void 0, void 0, function* () {
-    const id = (0, apiClients_1.getQueryParam)('id');
+    const id = (0, urlUtils_1.getQueryParam)('id');
     try {
         const reponse = yield fetch('http://localhost:8000/api/admin/habitats/' + id);
         console.log("L'habitat est bien chargé", reponse);

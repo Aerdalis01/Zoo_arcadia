@@ -1,3 +1,5 @@
+import { getQueryParam } from '../utils/urlUtils'
+
 const btnSignup = document.querySelector('.btnSignup') as HTMLElement;
 
 // Méthode pour récupérer et afficher le données de vues des animaux
@@ -38,3 +40,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 btnSignup.addEventListener('click', () => {
   window.location.replace('/signup');
 })
+
+
+//Méthode pour charger les informations de la pages via Fetch
+
+const admin = async () => {
+  const id = getQueryParam('id');
+  try {
+    const reponse = await fetch('http://localhost:8000/api/admin/habitats/'+id);
+    console.log("L'habitat est bien chargé", reponse);
+  } catch (error) {
+    if (error instanceof Error) {
+    console.error(`Erreur lors du chargement de l'habitat: ${error.message}`);
+  } else {
+    console.error('Erreur inattendue: ${error}');
+  }
+  }
+}
+
+admin(); 

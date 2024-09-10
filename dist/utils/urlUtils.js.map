@@ -1,0 +1,1 @@
+{"version":3,"file":"urlUtils.js","sourceRoot":"","sources":["../../TypeScript/utils/urlUtils.ts"],"names":[],"mappings":";;;AAAO,MAAM,aAAa,GAAG,CAAC,KAAa,EAAiB,EAAE;IAC5D,MAAM,WAAW,GAAG,MAAM,CAAC,QAAQ,CAAC,MAAM,CAAC;IAC3C,MAAM,SAAS,GAAG,IAAI,eAAe,CAAC,WAAW,CAAC,CAAC;IACnD,OAAO,SAAS,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC;AAC9B,CAAC,CAAC;AAJW,QAAA,aAAa,iBAIxB"}
